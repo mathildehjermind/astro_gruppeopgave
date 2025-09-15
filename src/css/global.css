@@ -1,0 +1,6 @@
+body {
+  font-family: "Didot", serif;
+  font-style: italic;
+  color: #C5F4FF; /* fallback text color, but override per page */
+  background: #fff; /* fallback background, override per page */
+}
