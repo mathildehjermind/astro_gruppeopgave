@@ -30,6 +30,7 @@ nav a {
   text-decoration: none;
   color: #FE604B;
   font-weight: normal;
+  font-style: normal;
 }
 /**********HEADER OG NAVBAR************/
 
@@ -57,6 +58,7 @@ nav a {
   padding: 0.5rem 1rem;
   white-space: nowrap;
   font-size: 1rem;
+  font-style: normal;
   color: #FE604B;
 }
 
@@ -68,3 +70,25 @@ nav a {
   position: relative;
 }
 /*****Dropdown nav**************/
+
+/************footer***********/
+footer {
+  text-align: center;
+  padding: 20px 0;
+  
+}
+
+footer a {
+  color: #FE604B;
+  text-decoration: none;
+  font-family: "Didot";
+  font-weight: normal;
+  font-style: normal;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;  
+}
+
+footer a:hover {
+  opacity: 0.8;
+}
