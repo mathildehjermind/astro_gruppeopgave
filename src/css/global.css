@@ -1,6 +1,70 @@
 body {
   font-family: "Didot", serif;
   font-style: italic;
-  color: #C5F4FF; /* fallback text color, but override per page */
-  background: #fff; /* fallback background, override per page */
+  color: #C5F4FF; 
+  background: #fff; 
 }
+
+/**********HEADER OG NAVBAR************/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 10px 20px;
+}
+
+.logo_1 img {
+  height: 70px; 
+  margin: 20px;
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 60px; 
+  margin: 20px;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #FE604B;
+  font-weight: normal;
+}
+/**********HEADER OG NAVBAR************/
+
+/*****Dropdown nav**************/
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);         
+  background: #fff;
+  padding: 0.5rem 0;
+  box-shadow: 0 4px 8px rgba(4, 4, 4, 0.3);
+  z-index: 1000;
+  list-style: none;
+  min-width: 200px;
+}
+
+.dropdown-menu li {
+  width: 100%; 
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  font-size: 1rem;
+  color: #FE604B;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown {
+  position: relative;
+}
+/*****Dropdown nav**************/
