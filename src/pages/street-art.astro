@@ -2,8 +2,52 @@
 import PageLayout from "../layouts/PageLayout.astro";
 import "../css/reset.css";
 import "../css/global.css";
+import "../css/street-art.css";
 ---
 
 <PageLayout title="Billedside">
-  <h1>Astro</h1>
+ <main class="street-art">
+  
+    <h1>NØRREBRO STREET ART</h1>
+
+    
+    <div class="big-image">
+      <img src="street.jpeg" alt="Street art mural" />
+      <p class="caption">
+        STREET ART MURAL BY SIMON SEBASTIAN<br/>
+        HILLERØDGADE 1, KØBENHAVN N
+      </p>
+    </div>
+
+   
+    <h2>THE DIVERSITY OF STREET ART MURALS IN COPENHAGEN AREA NØRREBRO</h2>
+    <p>
+      Nørrebro, the diverse and modern neighbourhood in Copenhagen is home to a wide range of street art murals. 
+      Integrated among the old buildings and chic surroundings the often colourful murals contributes to a casual yet inspiring atmosphere. 
+      Created by well-known as well as unknown artists, the large murals are often painted on what would otherwise be empty walls and gables 
+      on the beautiful buildings.
+    </p>
+    <p>
+      As a young creative visiting Copenhagen a walk through this neighbourhood is almost guaranteed to awaken inspiration as well as offer 
+      a peak into the fun and laid-back world of street art.
+    </p>
+
+    
+    <section class="two-images">
+      <div class="image-box">
+        <img src="gr170.jpeg" alt="Street art 1" />
+        <p class="caption">
+          STREET ART MURAL BY GR170<br/>
+          SØLLERØDGADE 48, KØBENHAVN N
+        </p>
+      </div>
+      <div class="image-box">
+        <img src="emilie.jpeg" alt="Street art 2" />
+        <p class="caption">
+          STREET ART MURAL BY EMILIE KLINT<br/>
+          DEN RØDE PLADS, KØBENHAVN N
+        </p>
+      </div>
+    </section>
+  </main>
 </PageLayout>
