@@ -2,8 +2,38 @@
 import PageLayout from "../layouts/PageLayout.astro";
 import "../css/reset.css";
 import "../css/global.css";
+import "../components/Card.astro";
+import "../css/style.css";
 ---
 
 <PageLayout title="Underside">
-  <h1>Astro</h1>
+  <section>
+  <h1 class="overskrift">
+  <span class="desktop-only">COPENHAGEN<br>CREATIVE SPACES</span>
+  <span class="mobile-only">COPENHAGEN CREATIVE SPACES</span>
+</h1>
+    <div class="grid_1-2">
+  <div class="spaces">
+    <a href="/street-art">
+    <p> NØRREBRO STREET ART </p>
+    </a>
+    <a href="/contact">
+  <p>COPENHAGEN CONTEMPORARY<br>LIMITED WORKS GALLERY <br> MACA MUSEUM OF CONTEMPORARY ART</p>
+</a>
+</div>
+
+<div class="grid_1-1">
+ 
+                   
+                
+<img src="cc.webp" alt="cc">
+
+<img src="streetart.webp" alt="streetart" >
+
+<img src="limited.webp" alt="limited">
+
+<img src="frame.webp" alt="frame">
+</div>
+</div>
+</section>
 </PageLayout>

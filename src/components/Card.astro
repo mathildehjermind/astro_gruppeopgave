@@ -1,0 +1,16 @@
+---
+// Card.astro
+const { title, text, img, link } = Astro.props;
+---
+<div class="card">
+  {img && <img src={img} alt={title} class="card-img" />}
+  <div class="card-content">
+    <h2 class="card-title">{title}</h2>
+    <p class="card-text">{text}</p>
+    {link && <a href={link} class="card-btn">Læs mere</a>}
+  </div>
+</div>
+<style>
+  
+  
+</style>

@@ -1,6 +1,6 @@
 /* Landing page */
 body:has(.landing) {
-  background: #FE604B;
+  background: #fe604b;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,8 +8,8 @@ body:has(.landing) {
   height: 100vh;
 }
 .landing a {
-  color: inherit;          
-  text-decoration: none;   
+  color: inherit;
+  text-decoration: none;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,7 +19,7 @@ body:has(.landing) {
   font-size: 24px;
   margin-bottom: 90px;
   text-align: center;
-  color: #C5F4FF;
+  color: #c5f4ff;
 }
 
 .logo {
@@ -33,13 +33,13 @@ body:has(.landing) {
 
 .stacked-text {
   text-align: center;
-  line-height: 1.0;
+  line-height: 1;
   font-size: 22px;
-  color: #C5F4FF;
+  color: #c5f4ff;
 }
 .stacked-text .bold {
   font-weight: bold;
-  font-style: normal; 
+  font-style: normal;
 }
 
 .stacked-text .italic {
@@ -48,7 +48,104 @@ body:has(.landing) {
 }
 
 @keyframes spinY {
-  from { transform: rotateY(0deg); }
-  to { transform: rotateY(360deg); }
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }
 /* Landing page */
+
+/* Subpage */
+.grid_1-2 {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  color: black;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid_1-1 img {
+  padding-bottom: 20px;
+  padding-left: 20px;
+  height: 250px;
+  object-fit: cover;
+  padding-right: 60px;
+}
+
+.desktop-only {
+  display: block;
+  color: black;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 2.7rem;
+  padding-top: 50px;
+  padding-left: 40px;
+}
+
+.mobile-only {
+  display: none;
+}
+.spaces {
+  color: black;
+  padding-left: 40px;
+  padding-top: 40px;
+  line-height: 30px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .grid_1-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: black;
+  }
+  .grid_1-1 img {
+    padding-bottom: 20px;
+    padding-left: 50px;
+    height: 300px;
+    object-fit: cover;
+    padding-right: 60px;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+    padding-left: 40px;
+    padding-top: 70px !important;
+    color: black;
+    font-size: 1.7rem;
+    font-style: italic;
+    font-weight: normal;
+  }
+
+  .spaces {
+    color: black;
+    padding-left: 50px;
+    padding-bottom: 60px;
+    font-size: 1rem;
+    line-height: 30px;
+  }
+}
+
+/* contact */
+.under_c {
+  color: black;
+  text-align: center;
+  padding-top: 100px;
+}
